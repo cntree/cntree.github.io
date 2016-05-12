@@ -10,10 +10,21 @@
   border-right-width: @right;
   border-left-width: @left;
   border-color:@topc @rightc @bottomc @leftc;
-
+}
+.scale(@scale: 1) {
+  -webkit-transform: scale(@scale);
+     -moz-transform: scale(@scale);
+      -ms-transform: scale(@scale);
+       -o-transform: scale(@scale);
+}
+.rotate(@deg: 0deg) {
+  -webkit-transform: rotate(@deg);
+     -moz-transform: rotate(@deg);
+      -ms-transform: rotate(@deg);
+       -o-transform: rotate(@deg);
 }
 .scale5{
-  transform: scale(.5);
+  .scale(.5);
 }
 .box  {
   width: 175px;
@@ -63,7 +74,7 @@
       display: inline-block;
       background-color: black;
       .border();
-      transform: rotate(180deg);
+      .rotate(180deg);
     }
     width: 50px;
     height: 10px;
@@ -100,7 +111,7 @@
       display: inline-block;
       background-color: black;
       .border(0px, 5px, 5px, 5px, #fff, #fff, #000, #fff);
-      transform: rotate(180deg);
+      .rotate(180deg);
     }
     &.d4{
       top: 5px;
