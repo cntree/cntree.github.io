@@ -1,0 +1,172 @@
+.clock {
+  width: 650px;
+  height: 150px;
+  margin: 50px auto;
+}
+.scale5 {
+  transform: scale(0.5);
+}
+.box {
+  width: 175px;
+  height: 125px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 20px 20px;
+  overflow: hidden;
+}
+.hour .decade,
+.minute .decade,
+.second .decade {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+.hour .unit,
+.minute .unit,
+.second .unit {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+.second {
+  bottom: -30px;
+  left: -59px;
+}
+.digit {
+  position: absolute;
+  background-color: black;
+  display: inline-block;
+}
+.digit.vdigit {
+  width: 50px;
+  height: 10px;
+}
+.digit.vdigit::before {
+  content: '';
+  position: relative;
+  top: -5px;
+  left: -5px;
+  display: inline-block;
+  background-color: black;
+  border-style: solid;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 0px;
+  border-color: #fff #000 #fff #fff;
+}
+.digit.vdigit::after {
+  content: '';
+  position: relative;
+  bottom: 5px;
+  right: -45px;
+  display: inline-block;
+  background-color: black;
+  border-style: solid;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 0px;
+  border-color: #fff #000 #fff #fff;
+  transform: rotate(180deg);
+}
+.digit.vdigit.d1 {
+  top: 0;
+  left: 10px;
+}
+.digit.vdigit.d2 {
+  top: 55px;
+  left: 10px;
+}
+.digit.vdigit.d3 {
+  top: 115px;
+  left: 10px;
+}
+.digit.rdigit {
+  width: 10px;
+  height: 50px;
+}
+.digit.rdigit::before {
+  content: '';
+  position: relative;
+  top: -10px;
+  left: 0px;
+  display: inline-block;
+  background-color: black;
+  border-style: solid;
+  border-top-width: 0px;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-color: #fff #fff #000 #fff;
+}
+.digit.rdigit::after {
+  content: '';
+  position: relative;
+  bottom: -20px;
+  right: 0px;
+  display: inline-block;
+  background-color: black;
+  border-style: solid;
+  border-top-width: 0px;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-color: #fff #fff #000 #fff;
+  transform: rotate(180deg);
+}
+.digit.rdigit.d4 {
+  top: 5px;
+  left: -5px;
+}
+.digit.rdigit.d5 {
+  top: 5px;
+  left: 65px;
+}
+.digit.rdigit.d6 {
+  top: 65px;
+  left: -5px;
+}
+.digit.rdigit.d7 {
+  top: 65px;
+  left: 65px;
+}
+@keyframes dot {
+  0% {
+    background-color: black;
+  }
+  49% {
+    background-color: black;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+}
+.dotmain {
+  position: relative;
+  top: 50px;
+  left: 210px;
+}
+.dotmain .dot {
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  animation-name: dot;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.dotmain .dot.dot1 {
+  left: 0px;
+  top: 0px;
+}
+.dotmain .dot.dot2 {
+  left: 0px;
+  top: 40px;
+}
