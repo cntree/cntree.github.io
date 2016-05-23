@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>李龙飞的简历</title>
+    <link rel="stylesheet" href="./dist/css/master.css" media="screen" title="no title" charset="utf-8">
+    <script src="./dist/js/jquery.js" charset="utf-8"></script>
+    <script src="./dist/js/master.js" charset="utf-8"></script>
+    <script src="./dist/js/scrollto.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <aside class="nav-bar">
+        <span data-scroll="page1" class="active"><p>
+          首页
+        </p></span>
+        <span data-scroll="page2"><p>
+          专业技能
+        </p></span>
+        <span data-scroll="page3"><p>
+          项目经验
+        </p></span>
+        <span data-scroll="page4"><p>
+          工作经历
+        </p></span>
+      </aside>
+      <div class="pages">
+        <section class="page page1 active" data-scroll-to="page1">
+          <header>
+            <div class="logo"></div>
+          </header>
+          <div class="resume">
+            <ul class="resume-left">
+              <li><span>姓名</span> | 李龙飞</li>
+              <li><span>手机</span> | 18620218502</li>
+              <li><span>邮箱</span> | <a href="mailto:topsoul.li@gmail.com" hidefocus="true">topsoul.li@gmail.com</a></li>
+              <li><span>所在城市</span> | 广东省-广州市</li>
+              <li><span>GitHub</span> | <a href="https://github.com/cntree" hidefocus="true">点击进入</a></li>
+              <li><span>博客</span> | <a href="http://www.mingon.cn/" hidefocus="true">点击进入</a></li>
+            </ul>
+            <div class="resume-right">
+              <p>
+                我是一个性格幽默、做事认真的人。
+                我喜欢研究所碰到的各种技术，不给自己设边界，有 Geek 精神。
+                我有时间概念，能在约定时间内保证完成任务。
+              </p>
+              <p>
+                半年前端开发经验，熟悉 HTML、CSS、Javascript，能熟练开发符合 W3C 标准的页面，熟练使用 jQuery 框架，曾经开发过 jQuery 插件。
+                有良好的编码习惯。
+                有 Linux 基础，对服务器端开发有一定了解，能够配合程序员完成相关工作。
+                熟悉 PHP+MySQL；理解基本的算法分析与数据结构，以及面向对象的设计模式。
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="page page2" data-scroll-to="page2">
+          <header>
+            专业技能
+          </header>
+        </section>
+        <section class="page page3" data-scroll-to="page3">
+          <header>
+            项目经验
+          </header>
+        </section>
+        <section class="page page4" data-scroll-to="page4">
+          <header>
+            工作经历
+          </header>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.nav-bar').scrollTo();
+      });
+    </script>
+  </body>
+</html>
