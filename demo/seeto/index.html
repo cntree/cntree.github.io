@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>广州星图科技有限公司_网站建设_企业建站</title>
+    <link rel="stylesheet" href="./css/master.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-2.2.3.min.js" charset="utf-8"></script>
+    <script src="js/scrollto.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <nav class="nav">
+          <ul>
+            <li><a href="#" data-scroll="home">首页</a></li>
+            <li><a href="#services" data-scroll="services">服务项目</a></li>
+            <li><a href="#" data-scroll="case">案例展示</a></li>
+            <li><a href="#" data-scroll="news">资讯中心</a></li>
+            <li><a href="#" data-scroll="contcatus">联系我们</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="full-page" data-scroll-to="home">
+        <img src="./img/desktop1.jpg" alt="" />
+      </div>
+      <div class="services" data-scroll-to="services">
+        <h1 class="title">服务项目</h1>
+        <span class="sub-title">SERVICES</span>
+        <img src="./img/services.jpg" alt="" />
+        <div class="page">
+          <ul>
+            <li>
+              <h3>企业官网</h3>
+              <h5>COMPANY WEBSITE</h5>
+              <p>
+                根据用户的需求、市场状况、企业情 <br>
+                况的进行综合分析可用性的Web解决 <br>
+                方案...
+              </p>
+              <a href="#">MORE</a>
+            </li>
+            <li>
+              <h3>移动官网</h3>
+              <h5>COMPANY WEBSITE</h5>
+              <p>
+                IOS/Android APP交互设计 视觉 <br>
+                设计 功能定制开发。基于HTML5 <br>
+                为移动设备...。
+              </p>
+              <a href="#">MORE</a>
+            </li>
+            <li>
+              <h3>移动官网</h3>
+              <h5>COMPANY WEBSITE</h5>
+              <p>
+                IOS/Android APP交互设计 视觉 <br>
+                设计 功能定制开发。基于HTML5 <br>
+                为移动设备...。
+              </p>
+              <a href="#">MORE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="case" data-scroll-to="case">
+        <h1>case</h1>
+      </div>
+      <div class="news" data-scroll-to="news">
+        <h1>news</h1>
+      </div>
+      
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".nav").scrollTo();
+      });
+    </script>
+  </body>
+</html>
