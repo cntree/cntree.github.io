@@ -1,181 +1,230 @@
-.clock {
-  width: 650px;
-  height: 150px;
-  margin: 50px auto;
+.clock
+{
+    width: 650px;
+    height: 150px;
+    margin: 50px auto;
 }
-.scale5 {
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
+.scale5
+{
+    -webkit-transform: scale(.5);
+       -moz-transform: scale(.5);
+        -ms-transform: scale(.5);
+         -o-transform: scale(.5);
 }
-.box {
-  width: 175px;
-  height: 125px;
-  position: relative;
-  display: inline-block;
-  float: left;
-  margin: 20px 20px;
-  overflow: hidden;
+.box
+{
+    position: relative;
+
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+
+    width: 175px;
+    height: 130px;
+    margin: 20px 20px;
 }
 .hour .decade,
 .minute .decade,
-.second .decade {
-  position: absolute;
-  top: 0px;
-  left: 5px;
+.second .decade
+{
+    position: absolute;
+    top: 0;
+    left: 5px;
 }
 .hour .unit,
 .minute .unit,
-.second .unit {
-  position: absolute;
-  top: 0px;
-  left: 100px;
+.second .unit
+{
+    position: absolute;
+    top: 0;
+    left: 100px;
 }
-.second {
-  bottom: -30px;
-  left: -59px;
+.second
+{
+    bottom: -30px;
+    left: -59px;
 }
-.digit {
-  position: absolute;
-  background-color: black;
-  display: inline-block;
-}
-.digit.vdigit {
-  width: 50px;
-  height: 10px;
-}
-.digit.vdigit::before {
-  content: '';
-  position: relative;
-  top: -5px;
-  left: -5px;
-  display: inline-block;
-  background-color: black;
-  border-style: solid;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-right-width: 5px;
-  border-left-width: 0px;
-  border-color: #fff #000 #fff #fff;
-}
-.digit.vdigit::after {
-  content: '';
-  position: relative;
-  bottom: 5px;
-  right: -45px;
-  display: inline-block;
-  background-color: black;
-  border-style: solid;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-right-width: 5px;
-  border-left-width: 0px;
-  border-color: #fff #000 #fff #fff;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-.digit.vdigit.d1 {
-  top: 0;
-  left: 10px;
-}
-.digit.vdigit.d2 {
-  top: 55px;
-  left: 10px;
-}
-.digit.vdigit.d3 {
-  top: 115px;
-  left: 10px;
-}
-.digit.rdigit {
-  width: 10px;
-  height: 50px;
-}
-.digit.rdigit::before {
-  content: '';
-  position: relative;
-  top: -10px;
-  left: 0px;
-  display: inline-block;
-  background-color: black;
-  border-style: solid;
-  border-top-width: 0px;
-  border-bottom-width: 5px;
-  border-right-width: 5px;
-  border-left-width: 5px;
-  border-color: #fff #fff #000 #fff;
-}
-.digit.rdigit::after {
-  content: '';
-  position: relative;
-  bottom: -20px;
-  right: 0px;
-  display: inline-block;
-  background-color: black;
-  border-style: solid;
-  border-top-width: 0px;
-  border-bottom-width: 5px;
-  border-right-width: 5px;
-  border-left-width: 5px;
-  border-color: #fff #fff #000 #fff;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-.digit.rdigit.d4 {
-  top: 5px;
-  left: -5px;
-}
-.digit.rdigit.d5 {
-  top: 5px;
-  left: 65px;
-}
-.digit.rdigit.d6 {
-  top: 65px;
-  left: -5px;
-}
-.digit.rdigit.d7 {
-  top: 65px;
-  left: 65px;
-}
-@keyframes dot {
-  0% {
+.digit
+{
+    position: absolute;
+
+    display: inline-block;
+
     background-color: black;
-  }
-  49% {
+}
+.digit.vdigit
+{
+    width: 50px;
+    height: 10px;
+}
+.digit.vdigit::before
+{
+    position: relative;
+    top: -5px;
+    left: -10px;
+
+    display: inline-block;
+
+    content: '';
+
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent ;
+}
+.digit.vdigit::after
+{
+    position: relative;
+    top: -5px;
+    right: -40px;
+
+    display: inline-block;
+
+    content: '';
+
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.digit.vdigit.d1
+{
+    top: 0;
+    left: 10px;
+}
+.digit.vdigit.d2
+{
+    top: 60px;
+    left: 10px;
+}
+.digit.vdigit.d3
+{
+    top: 120px;
+    left: 10px;
+}
+.digit.rdigit
+{
+    width: 10px;
+    height: 50px;
+}
+.digit.rdigit::before
+{
+    position: relative;
+    top: -15px;
+    left: 0;
+
+    display: inline-block;
+
+    content: '';
+
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.digit.rdigit::after
+{
+    position: relative;
+    top: 25px;
+    right: 0;
+
+    display: inline-block;
+
+    content: '';
+
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.digit.rdigit.d4
+{
+    top: 10px;
+    left: -5px;
+}
+.digit.rdigit.d5
+{
+    top: 10px;
+    left: 65px;
+}
+.digit.rdigit.d6
+{
+    top: 70px;
+    left: -5px;
+}
+.digit.rdigit.d7
+{
+    top: 70px;
+    left: 65px;
+}
+@-webkit-keyframes dot
+{
+    0%
+    {
+        background-color: black;
+    }
+    49%
+    {
+        background-color: black;
+    }
+    50%
+    {
+        background-color: transparent;
+    }
+    99%
+    {
+        background-color: transparent;
+    }
+}
+@keyframes dot
+{
+    0%
+    {
+        background-color: black;
+    }
+    49%
+    {
+        background-color: black;
+    }
+    50%
+    {
+        background-color: transparent;
+    }
+    99%
+    {
+        background-color: transparent;
+    }
+}
+.dotmain
+{
+    position: relative;
+    top: 50px;
+    left: 210px;
+}
+.dotmain .dot
+{
+    position: absolute;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    -webkit-animation-name: dot;
+
+            animation-name: dot;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
     background-color: black;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
 }
-.dotmain {
-  position: relative;
-  top: 50px;
-  left: 210px;
+.dotmain .dot.dot1
+{
+    top: 0;
+    left: 0;
 }
-.dotmain .dot {
-  display: inline-block;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: black;
-  animation-name: dot;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-}
-.dotmain .dot.dot1 {
-  left: 0px;
-  top: 0px;
-}
-.dotmain .dot.dot2 {
-  left: 0px;
-  top: 40px;
+.dotmain .dot.dot2
+{
+    top: 40px;
+    left: 0;
 }
